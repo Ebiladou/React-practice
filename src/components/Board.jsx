@@ -9,6 +9,7 @@ function Board({ xIsNext, square, onPlay }) {
     if (CalWinner(square) || square[i]) {
       return;
     }
+  
 
     const nextSquare = square.slice();
     if (xIsNext) {
